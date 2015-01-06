@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72BED2481A5C69B2003ED7A0 /* SynthUnits.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BED2471A5C69B2003ED7A0 /* SynthUnits.h */; };
-		72BED24A1A5C69B2003ED7A0 /* SynthUnits.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BED2491A5C69B2003ED7A0 /* SynthUnits.m */; };
 		72BED2501A5C69B2003ED7A0 /* libSynthUnits.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BED2441A5C69B1003ED7A0 /* libSynthUnits.dylib */; };
+		72BED26A1A5C6AA7003ED7A0 /* BaseAudioModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BED25E1A5C6AA7003ED7A0 /* BaseAudioModule.h */; };
+		72BED26B1A5C6AA7003ED7A0 /* BaseAudioModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72BED25F1A5C6AA7003ED7A0 /* BaseAudioModule.mm */; };
+		72BED26C1A5C6AA7003ED7A0 /* ConnectableModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BED2601A5C6AA7003ED7A0 /* ConnectableModule.h */; };
+		72BED26D1A5C6AA7003ED7A0 /* ConnectableModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BED2611A5C6AA7003ED7A0 /* ConnectableModule.m */; };
+		72BED26E1A5C6AA7003ED7A0 /* Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BED2621A5C6AA7003ED7A0 /* Filter.h */; };
+		72BED26F1A5C6AA7003ED7A0 /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BED2631A5C6AA7003ED7A0 /* Filter.m */; };
+		72BED2701A5C6AA7003ED7A0 /* Mixer.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BED2641A5C6AA7003ED7A0 /* Mixer.h */; };
+		72BED2711A5C6AA7003ED7A0 /* Mixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BED2651A5C6AA7003ED7A0 /* Mixer.m */; };
+		72BED2721A5C6AA7003ED7A0 /* Oscillator.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BED2661A5C6AA7003ED7A0 /* Oscillator.h */; };
+		72BED2731A5C6AA7003ED7A0 /* Oscillator.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BED2671A5C6AA7003ED7A0 /* Oscillator.m */; };
+		72BED2741A5C6AA7003ED7A0 /* Output.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BED2681A5C6AA7003ED7A0 /* Output.h */; };
+		72BED2751A5C6AA7003ED7A0 /* Output.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BED2691A5C6AA7003ED7A0 /* Output.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,10 +34,20 @@
 
 /* Begin PBXFileReference section */
 		72BED2441A5C69B1003ED7A0 /* libSynthUnits.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSynthUnits.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		72BED2471A5C69B2003ED7A0 /* SynthUnits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynthUnits.h; sourceTree = "<group>"; };
-		72BED2491A5C69B2003ED7A0 /* SynthUnits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynthUnits.m; sourceTree = "<group>"; };
 		72BED24F1A5C69B2003ED7A0 /* SynthUnitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynthUnitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72BED2551A5C69B2003ED7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72BED25E1A5C6AA7003ED7A0 /* BaseAudioModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAudioModule.h; sourceTree = "<group>"; };
+		72BED25F1A5C6AA7003ED7A0 /* BaseAudioModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseAudioModule.mm; sourceTree = "<group>"; };
+		72BED2601A5C6AA7003ED7A0 /* ConnectableModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectableModule.h; sourceTree = "<group>"; };
+		72BED2611A5C6AA7003ED7A0 /* ConnectableModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectableModule.m; sourceTree = "<group>"; };
+		72BED2621A5C6AA7003ED7A0 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		72BED2631A5C6AA7003ED7A0 /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
+		72BED2641A5C6AA7003ED7A0 /* Mixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixer.h; sourceTree = "<group>"; };
+		72BED2651A5C6AA7003ED7A0 /* Mixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixer.m; sourceTree = "<group>"; };
+		72BED2661A5C6AA7003ED7A0 /* Oscillator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillator.h; sourceTree = "<group>"; };
+		72BED2671A5C6AA7003ED7A0 /* Oscillator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Oscillator.m; sourceTree = "<group>"; };
+		72BED2681A5C6AA7003ED7A0 /* Output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Output.h; sourceTree = "<group>"; };
+		72BED2691A5C6AA7003ED7A0 /* Output.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Output.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +90,18 @@
 		72BED2461A5C69B1003ED7A0 /* SynthUnits */ = {
 			isa = PBXGroup;
 			children = (
-				72BED2471A5C69B2003ED7A0 /* SynthUnits.h */,
-				72BED2491A5C69B2003ED7A0 /* SynthUnits.m */,
+				72BED25E1A5C6AA7003ED7A0 /* BaseAudioModule.h */,
+				72BED25F1A5C6AA7003ED7A0 /* BaseAudioModule.mm */,
+				72BED2601A5C6AA7003ED7A0 /* ConnectableModule.h */,
+				72BED2611A5C6AA7003ED7A0 /* ConnectableModule.m */,
+				72BED2621A5C6AA7003ED7A0 /* Filter.h */,
+				72BED2631A5C6AA7003ED7A0 /* Filter.m */,
+				72BED2641A5C6AA7003ED7A0 /* Mixer.h */,
+				72BED2651A5C6AA7003ED7A0 /* Mixer.m */,
+				72BED2661A5C6AA7003ED7A0 /* Oscillator.h */,
+				72BED2671A5C6AA7003ED7A0 /* Oscillator.m */,
+				72BED2681A5C6AA7003ED7A0 /* Output.h */,
+				72BED2691A5C6AA7003ED7A0 /* Output.m */,
 			);
 			path = SynthUnits;
 			sourceTree = "<group>";
@@ -99,7 +129,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72BED2481A5C69B2003ED7A0 /* SynthUnits.h in Headers */,
+				72BED26E1A5C6AA7003ED7A0 /* Filter.h in Headers */,
+				72BED26A1A5C6AA7003ED7A0 /* BaseAudioModule.h in Headers */,
+				72BED2701A5C6AA7003ED7A0 /* Mixer.h in Headers */,
+				72BED26C1A5C6AA7003ED7A0 /* ConnectableModule.h in Headers */,
+				72BED2721A5C6AA7003ED7A0 /* Oscillator.h in Headers */,
+				72BED2741A5C6AA7003ED7A0 /* Output.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72BED24A1A5C69B2003ED7A0 /* SynthUnits.m in Sources */,
+				72BED2751A5C6AA7003ED7A0 /* Output.m in Sources */,
+				72BED26D1A5C6AA7003ED7A0 /* ConnectableModule.m in Sources */,
+				72BED26F1A5C6AA7003ED7A0 /* Filter.m in Sources */,
+				72BED26B1A5C6AA7003ED7A0 /* BaseAudioModule.mm in Sources */,
+				72BED2711A5C6AA7003ED7A0 /* Mixer.m in Sources */,
+				72BED2731A5C6AA7003ED7A0 /* Oscillator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

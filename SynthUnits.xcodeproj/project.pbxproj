@@ -23,6 +23,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7262519D1A5C733900BA7965 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 726251981A5C733800BA7965 /* SimpleSynthExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 726251781A5C733800BA7965;
+			remoteInfo = SimpleSynthExample;
+		};
+		7262519F1A5C733900BA7965 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 726251981A5C733800BA7965 /* SimpleSynthExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 726251881A5C733800BA7965;
+			remoteInfo = SimpleSynthExampleTests;
+		};
 		72BED2511A5C69B2003ED7A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 72BED23C1A5C69B1003ED7A0 /* Project object */;
@@ -33,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		726251981A5C733800BA7965 /* SimpleSynthExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SimpleSynthExample.xcodeproj; path = Examples/SimpleSynthExample/SimpleSynthExample.xcodeproj; sourceTree = "<group>"; };
 		72BED2441A5C69B1003ED7A0 /* libSynthUnits.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSynthUnits.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		72BED24F1A5C69B2003ED7A0 /* SynthUnitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynthUnitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72BED2551A5C69B2003ED7A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,9 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		726251991A5C733800BA7965 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7262519E1A5C733900BA7965 /* SimpleSynthExample.app */,
+				726251A01A5C733900BA7965 /* SimpleSynthExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		72BED23B1A5C69B1003ED7A0 = {
 			isa = PBXGroup;
 			children = (
+				726251981A5C733800BA7965 /* SimpleSynthExample.xcodeproj */,
 				72BED2461A5C69B1003ED7A0 /* SynthUnits */,
 				72BED2531A5C69B2003ED7A0 /* SynthUnitsTests */,
 				72BED2451A5C69B1003ED7A0 /* Products */,
@@ -203,6 +228,12 @@
 			mainGroup = 72BED23B1A5C69B1003ED7A0;
 			productRefGroup = 72BED2451A5C69B1003ED7A0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 726251991A5C733800BA7965 /* Products */;
+					ProjectRef = 726251981A5C733800BA7965 /* SimpleSynthExample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				72BED2431A5C69B1003ED7A0 /* SynthUnits */,
@@ -210,6 +241,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7262519E1A5C733900BA7965 /* SimpleSynthExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SimpleSynthExample.app;
+			remoteRef = 7262519D1A5C733900BA7965 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		726251A01A5C733900BA7965 /* SimpleSynthExampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SimpleSynthExampleTests.xctest;
+			remoteRef = 7262519F1A5C733900BA7965 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		72BED24D1A5C69B2003ED7A0 /* Resources */ = {
@@ -398,6 +446,7 @@
 				72BED25A1A5C69B2003ED7A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72BED25B1A5C69B2003ED7A0 /* Build configuration list for PBXNativeTarget "SynthUnitsTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +455,7 @@
 				72BED25D1A5C69B2003ED7A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

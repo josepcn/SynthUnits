@@ -37,7 +37,7 @@ static const double defaultAmplitude = 0.25;
 //+ (void) checkStreamFormatOnBus : (UInt32) busIni forInput:(bool) isInput onUnit:(AudioComponentInstance) unit;
 //- (void) checkStreamFormatOnBus : (UInt32) busIni forInput:(bool) isInput;
 
-+ (void) setStreamFormatFromBus : (UInt32) busIni toBus: (UInt32) busEnd forInput:(bool) isInput onUnit:(AudioComponentInstance) unit;
+//+ (void) setStreamFormatFromBus : (UInt32) busIni toBus: (UInt32) busEnd forInput:(bool) isInput onUnit:(AudioComponentInstance) unit;
 //- (void) setStreamFormatFromBus : (UInt32) busIni toBus: (UInt32) busEnd forInput:(bool) isInput;
 
 

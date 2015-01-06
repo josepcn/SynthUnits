@@ -66,6 +66,7 @@
 
     }
 
+/*
 
     + (void) setStreamFormatFromBus : (UInt32) busIni toBus: (UInt32) busEnd forInput:(bool) isInput onUnit:(AudioComponentInstance) audioUnit{
        
@@ -127,6 +128,7 @@
         }
 
     }
+ */
 
     /*
     - (void) setStreamFormatFromBus : (UInt32) busIni toBus: (UInt32) busEnd forInput:(bool) isInput {

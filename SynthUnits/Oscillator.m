@@ -160,7 +160,7 @@ OSStatus OscillatorRenderFunction2(
     NSAssert1(err == noErr, @"Error setting property render callback on generator: %hd", err);
     
     
-    [BaseAudioModule setStreamFormatFromBus:0 toBus:0 forInput:true onUnit:audioUnits[0]];
+    //[BaseAudioModule setStreamFormatFromBus:0 toBus:0 forInput:true onUnit:audioUnits[0]];
     //[self setStreamFormatFromBus:0 toBus:0 forInput:false];
     
     

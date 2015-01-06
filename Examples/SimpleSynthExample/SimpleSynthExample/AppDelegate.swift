@@ -11,7 +11,7 @@ import CoreAudio
 import Foundation
 import AudioToolbox
 
-
+@NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBOutlet var window: NSWindow?

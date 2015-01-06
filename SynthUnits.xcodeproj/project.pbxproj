@@ -96,10 +96,10 @@
 		72BED23B1A5C69B1003ED7A0 = {
 			isa = PBXGroup;
 			children = (
-				726251981A5C733800BA7965 /* SimpleSynthExample.xcodeproj */,
 				72BED2461A5C69B1003ED7A0 /* SynthUnits */,
 				72BED2531A5C69B2003ED7A0 /* SynthUnitsTests */,
 				72BED2451A5C69B1003ED7A0 /* Products */,
+				726251981A5C733800BA7965 /* SimpleSynthExample.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};

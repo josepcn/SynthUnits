@@ -705,6 +705,9 @@
                     <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fzo-QO-sPd">
                         <rect key="frame" x="489" y="118" width="21" height="129"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="right" sliderType="linear" id="w69-0c-u9G"/>
+                        <connections>
+                            <action selector="sliderPostFilterMixerChanged:" target="Voe-Tx-rLC" id="wdS-4P-1lH"/>
+                        </connections>
                     </slider>
                     <box autoresizesSubviews="NO" fixedFrame="YES" title="Osc 2" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="fzg-iZ-k7e">
                         <rect key="frame" x="17" y="48" width="229" height="141"/>
@@ -723,6 +726,9 @@
                                 <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWB-tI-FA4">
                                     <rect key="frame" x="97" y="50" width="28" height="30"/>
                                     <sliderCell key="cell" continuous="YES" alignment="left" identifier="frequency" minValue="20" maxValue="1000" doubleValue="20" tickMarkPosition="above" sliderType="circular" id="lpZ-fl-lFr"/>
+                                    <connections>
+                                        <action selector="sliderChanged:" target="Voe-Tx-rLC" id="JFe-rI-Eg8"/>
+                                    </connections>
                                 </slider>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHq-jn-mRu">
                                     <rect key="frame" x="131" y="57" width="181" height="17"/>
@@ -743,6 +749,9 @@
                                 <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iis-0n-ofa">
                                     <rect key="frame" x="96" y="11" width="28" height="30"/>
                                     <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" doubleValue="0.10000000000000001" tickMarkPosition="above" allowsTickMarkValuesOnly="YES" sliderType="circular" id="n1Y-8m-PEB"/>
+                                    <connections>
+                                        <action selector="sliderChanged:" target="Voe-Tx-rLC" id="aFV-2M-AbJ"/>
+                                    </connections>
                                 </slider>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cb8-Gv-aC0">
                                     <rect key="frame" x="129" y="18" width="185" height="17"/>
@@ -765,6 +774,9 @@
                                             <string>Triangle</string>
                                         </objectValues>
                                     </comboBoxCell>
+                                    <connections>
+                                        <action selector="oscilatorTypeChanged:" target="Voe-Tx-rLC" id="qcw-aX-dih"/>
+                                    </connections>
                                 </comboBox>
                                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oS9-cz-UpU">
                                     <rect key="frame" x="16" y="99" width="61" height="18"/>
@@ -772,6 +784,9 @@
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
+                                    <connections>
+                                        <action selector="oscilatorEnabledChanged:" target="Voe-Tx-rLC" id="xqn-LT-aw1"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </view>
@@ -784,6 +799,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="buttonClicked:" target="Voe-Tx-rLC" id="3JI-Vz-lqS"/>
+                        </connections>
                     </button>
                     <box autoresizesSubviews="NO" fixedFrame="YES" title="Filter" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="Wmd-KD-xZV">
                         <rect key="frame" x="291" y="48" width="185" height="141"/>
@@ -814,10 +832,16 @@
                                 <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNo-t9-xuB">
                                     <rect key="frame" x="61" y="49" width="28" height="30"/>
                                     <sliderCell key="cell" continuous="YES" alignment="left" identifier="frequency" maxValue="2000" tickMarkPosition="above" sliderType="circular" id="zV7-XZ-wGG"/>
+                                    <connections>
+                                        <action selector="sliderChanged:" target="Voe-Tx-rLC" id="YsS-qO-uva"/>
+                                    </connections>
                                 </slider>
                                 <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RE4-P8-hnD">
                                     <rect key="frame" x="61" y="11" width="28" height="30"/>
                                     <sliderCell key="cell" continuous="YES" alignment="left" maxValue="2000" tickMarkPosition="above" allowsTickMarkValuesOnly="YES" sliderType="circular" id="Pcb-xV-gJx"/>
+                                    <connections>
+                                        <action selector="sliderChanged:" target="Voe-Tx-rLC" id="oOe-Jk-hnY"/>
+                                    </connections>
                                 </slider>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jz2-Rh-bmc">
                                     <rect key="frame" x="16" y="56" width="30" height="17"/>
@@ -873,6 +897,9 @@
                                 <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hnX-01-yET">
                                     <rect key="frame" x="97" y="50" width="28" height="30"/>
                                     <sliderCell key="cell" continuous="YES" alignment="left" identifier="frequency" minValue="20" maxValue="1000" doubleValue="20" tickMarkPosition="above" sliderType="circular" id="k3y-M3-EQS"/>
+                                    <connections>
+                                        <action selector="sliderChanged:" target="Voe-Tx-rLC" id="4QL-9l-Cc1"/>
+                                    </connections>
                                 </slider>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d2L-v8-ysX">
                                     <rect key="frame" x="131" y="57" width="181" height="17"/>
@@ -893,6 +920,9 @@
                                 <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T5Q-s9-C5C">
                                     <rect key="frame" x="96" y="11" width="28" height="30"/>
                                     <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" doubleValue="0.10000000000000001" tickMarkPosition="above" allowsTickMarkValuesOnly="YES" sliderType="circular" id="xTa-U6-jjm"/>
+                                    <connections>
+                                        <action selector="sliderChanged:" target="Voe-Tx-rLC" id="qI4-b5-uGz"/>
+                                    </connections>
                                 </slider>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jHv-3U-HKw">
                                     <rect key="frame" x="129" y="18" width="185" height="17"/>
@@ -915,6 +945,9 @@
                                             <string>Triangle</string>
                                         </objectValues>
                                     </comboBoxCell>
+                                    <connections>
+                                        <action selector="oscilatorTypeChanged:" target="Voe-Tx-rLC" id="cL8-UU-L0U"/>
+                                    </connections>
                                 </comboBox>
                                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jPN-Lu-ZZb">
                                     <rect key="frame" x="16" y="99" width="61" height="18"/>
@@ -922,6 +955,9 @@
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
                                     </buttonCell>
+                                    <connections>
+                                        <action selector="oscilatorEnabledChanged:" target="Voe-Tx-rLC" id="Q8K-OF-t0F"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </view>
@@ -957,10 +993,16 @@
                                 <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3w-Rs-cbX">
                                     <rect key="frame" x="61" y="54" width="28" height="30"/>
                                     <sliderCell key="cell" continuous="YES" alignment="left" identifier="frequency" maxValue="2000" doubleValue="20" tickMarkPosition="above" sliderType="circular" id="IIk-jR-5Ru"/>
+                                    <connections>
+                                        <action selector="sliderChanged:" target="Voe-Tx-rLC" id="5lH-vH-wP4"/>
+                                    </connections>
                                 </slider>
                                 <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XMc-Cv-8wo">
                                     <rect key="frame" x="61" y="16" width="28" height="30"/>
                                     <sliderCell key="cell" continuous="YES" alignment="left" maxValue="2000" tickMarkPosition="above" allowsTickMarkValuesOnly="YES" sliderType="circular" id="1Kg-zD-aUD"/>
+                                    <connections>
+                                        <action selector="sliderChanged:" target="Voe-Tx-rLC" id="ZQl-UT-dZV"/>
+                                    </connections>
                                 </slider>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Xo-Wb-HRm">
                                     <rect key="frame" x="16" y="61" width="30" height="17"/>
@@ -1005,14 +1047,23 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="buttonClicked:" target="Voe-Tx-rLC" id="0rm-YS-ub5"/>
+                        </connections>
                     </button>
                     <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tIY-MC-R65">
                         <rect key="frame" x="254" y="192" width="21" height="129"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="right" sliderType="linear" id="dH4-KG-NWf"/>
+                        <connections>
+                            <action selector="sliderPreFilterChanged:" target="Voe-Tx-rLC" id="Xqt-xe-ghX"/>
+                        </connections>
                     </slider>
                     <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kmy-vY-5ot">
                         <rect key="frame" x="254" y="49" width="21" height="129"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="right" sliderType="linear" id="dw7-U7-zs4"/>
+                        <connections>
+                            <action selector="sliderPreFilterChanged:" target="Voe-Tx-rLC" id="rPT-vP-zI9"/>
+                        </connections>
                     </slider>
                 </subviews>
             </view>

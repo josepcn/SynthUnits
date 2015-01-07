@@ -63,8 +63,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func sliderPostFilterMixerChanged(sender: NSSlider) {
         if( sender == sliderPostFiltersMixer ){
             var percentage = sliderPostFiltersMixer.doubleValue
-            //synth.setVolumeOnMixerInput(postFiltersMixerID, bus: 0, volume: percentage)
-            //synth.setVolumeOnMixerInput(postFiltersMixerID, bus: 1, volume: 1.0-percentage)
         }
     }
     
@@ -91,11 +89,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         if( sender == checkEnabledOsc1 ){
             osc1.setEnabled(checked)
-            //synth.setEnableOnOscilatorWithID(oscil1ID, enabled:checked )
         }
         else if( sender == checkEnabledOsc2 ){
             osc2.setEnabled(checked)
-            //synth.setEnableOnOscilatorWithID(oscil2ID, enabled:checked )
         }else if( sender == checkEnableFilter1 ){
             filter1.setEnabled(checked);
             
@@ -122,11 +118,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         if( sender == comboOsc1WaveType ){
             osc1.wave = wave
-            //synth.setWaveformOnOscilatorWithID(oscil1ID, waveform: wave)
         }
         if( sender == comboOsc2WaveType ){
             osc2.wave = wave
-            // synth.setWaveformOnOscilatorWithID(oscil2ID, waveform: wave)
         }
         
         
@@ -139,28 +133,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             
             lblFrqOsc1!.stringValue = "\(f) hz"
             osc1.frequency = f
-            //synth.setFrequencyOnOscilatorWithID(oscil1ID, frequency: f)
         }
         if( sender == sliderFrqOsc2 ){
             var f: Double = Double(sender.integerValue)
             
             lblFrqOsc2!.stringValue = "\(f) hz"
             osc2.frequency = f
-            //synth.setFrequencyOnOscilatorWithID(oscil2ID, frequency: f)
         }
         if( sender == sliderAmpOsc1 ){
             var d = sender.doubleValue
             
             lblAmpOsc1!.stringValue = "\(d)"
             osc1.amplitude = d
-            //synth.setAmplitudeOnOscilatorWithID(oscil1ID, amplitude: d)
         }
         if( sender == sliderAmpOsc2 ){
             var d = sender.doubleValue
             
             lblAmpOsc2!.stringValue = "\(d)"
             osc2.amplitude = d
-            //synth.setAmplitudeOnOscilatorWithID(oscil2ID, amplitude: d)
         }
         if( sender == sliderFilter1LowCutOff ){
             var d = sender.doubleValue
@@ -188,13 +178,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func buttonClicked(sender: NSButton) {
         
         if( sender == startButton ){
-            //generator.start()
-            //synth.powerOn()
             output.start()
         }
         if( sender == stopButton ){
-            //generator.stop()
-            //synth.powerOff()
             output.stop()
         }
     }
@@ -203,11 +189,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
         
-        /*
-        osc1.connectTo(mixerPreFilter1, fromBus: 0, toBus: 0)
-        osc1.connectTo(mixerPreFilter1, fromBus: 1, toBus: 1)
-        mixerPreFilter1.connectTo(output, fromBus: 0, toBus: 0)
-        */
         
         osc1.connectTo(mixerPreFilter1, fromBus: 0, toBus: 0)
         osc2.connectTo(mixerPreFilter1, fromBus: 0, toBus: 1)
@@ -237,7 +218,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationWillTerminate(aNotification: NSNotification?) {
         // Insert code here to tear down your application
-        //generator.stop()
     }
     
     
